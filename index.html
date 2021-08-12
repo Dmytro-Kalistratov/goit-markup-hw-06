@@ -295,15 +295,51 @@
                         </a></li>
                 </ul>
             </div>
+            <div>
+                <form class="subscribe-form">
+                    <p class="subscribe-title">Подпишитесь на рассылку</p>
+                    <div class="subscribe-elements-position">
+                        <input class="subscribe-input" type="email" name="email-footer" placeholder="E-mail"/>
+                        <button class="submit-footer" type="submit">Подписаться<svg class="submit-footer-icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#submit-footer"></use>
+                        </svg></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 
     <!-- Модальное окно -->
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal"><button class="modal-button" type="button" data-modal-close><svg class="" width="11" height="11">
+        <div class="modal">
+            <button class="modal-close-button" type="button" data-modal-close><svg class="close-button-icon" width="11" height="11">
             <use href="./images/symbol-defs.svg#modal-close"></use>
-        </svg></button></div>
+        </svg></button>
+        <form class="callback">
+            <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
+            <ul class="form-callback">
+                <li class="form-callback-field"><label class="form-label" for="contact-modal">Имя</label>
+                <input class="form-input" type="text" name="contact-modal" id="contact-modal" /></li>
+
+                <li class="form-callback-field"><label class="form-label" for="tel-modal">Телефон</label>
+                <input class="form-input" type="tel" name="tel-modal" id="tel-modal" /></li>
+
+                <li class="form-callback-field"><label class="form-label" for="email">Почта</label>
+                <input class="form-input" type="email" name="email-modal" id="email-modal" /></li>
+
+                <li class="form-callback-field"><label class="form-label" for="comment-modal">Комментарий</label>
+                <textarea class="form-comment" name="comment-modal" id="comment-modal" rows="10" placeholder="Введите текст"></textarea></li>
+            </ul>
+            <p class="form-checkbox">
+                <input class="" type="checkbox" name="agreement " value="agreement " id="agreement " />
+                <label class="" for="agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-modal" href="#">Условия договора</a></label>
+            </p>
+            <div class="form-submit-position">
+                <button class="form-submit" type="submit">Отправить</button>
+            </div>
+        </form>
+        </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
